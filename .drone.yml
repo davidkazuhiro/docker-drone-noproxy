@@ -1,0 +1,10 @@
+pipeline:
+  publish:
+    image: plugins/docker
+    environment:
+      - HTTP_PROXY=example.com
+      - HTTPS_PROXY=example.com
+      - NOPROXY=index.docker.com
+    username: $your_username
+    password: $your_password
+    repo: $your_repo
